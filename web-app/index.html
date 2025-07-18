@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Quiz Timer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>⏳ Quiz Timer</h1>
+
+    
+    <div id="quiz-card">
+      <div id="questionText" class="question-text">Loading questions…</div>
+      <div id="options" class="options"></div>
+      <div id="timer" class="timer">
+        Time left: <span id="countdown">0</span>s
+      </div>
+      <button id="nextBtn" class="next-btn" onclick="nextQuestion()" disabled>
+        Next
+      </button>
+    </div>
+
+    
+    <div id="result" class="result hidden">
+      <h2>Your Score</h2>
+      <p>
+        <span id="score">0</span> / <span id="total">0</span>
+      </p>
+    </div>
+  </div>
+
+  <audio id="beep" src="https://actions.google.com/sounds/v1/alarms/beep_short.ogg" preload="auto"></audio>
+  <script src="script.js"></script>
+</body>
+</html>
